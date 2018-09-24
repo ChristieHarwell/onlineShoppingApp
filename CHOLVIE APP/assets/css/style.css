@@ -1,0 +1,370 @@
+
+/* General style */
+/* default syling for page */
+ul, li, p, h1, h2, h3, h4, a, button {
+  color: black;
+  font-variant: small-caps;
+  text-decoration: none;
+}
+
+/* ======================= */
+
+/* Center the loader */
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+    text-align: center;
+  }
+
+/* ========================================================= */
+
+/* Navbar css */
+.navbar-header:hover {
+  background: #555;
+}
+
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-inverse .navbar-brand {
+  color: black;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: black;
+}
+
+/* Dropdown Button */
+.dropdown-toggle:hover {
+  background-color: rgb(95, 94, 94) !important;
+  }
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn1 {background-color: rgb(95, 94, 94);}
+
+/* links within the dropdown menus of the navbar */
+.navbar-inverse .navbar-nav > li > ul > li > a:hover {
+  color: red;
+}
+
+/* links within the dropdown menus of the navbar */
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: red;
+  /* background: #f1f1f1; */
+}
+
+ul li {display: inline-block;}
+ul li:hover {background: #f1f1f1;}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+ul li ul li {
+  background: white;
+  color: black;
+  display: block;
+}
+ul li ul li a {display:block !important;}
+ul li ul li:hover {color: rgb(95, 94, 94);}
+
+
+/* carousel css */
+.item, .item active {
+    max-width: 100%;
+    height: 75px;
+}
+
+#sale-carousel {
+    color: white;
+    text-align: center;
+    font-size: 100%;
+    /* padding: 50px; */
+}
+
+/* ======================================================== */
+
+/* social */
+.social-body{
+	position:fixed;
+	top:50%;
+	left:0;
+	margin-top:-80px;
+	z-index:999;
+}
+.social-body ul li{
+	display:block;
+}
+.social-body ul li a{
+	font-size:20px;
+	color:#fff;
+	background: rgb(43, 32, 202);
+	height: 40px;
+    width: 40px;
+	line-height:40px;
+	text-align:center;
+	display:block;
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+}
+.social-body ul li a:hover{
+	width:50px;
+}
+.social-body  ul li.facebook a{
+	background:#425F9C;
+}
+.social-body .ul li.twitter a{
+	background:#1DA1F3;
+}
+.social-body ul li.instagram a {
+	background: #E21B75;
+}
+.social-body ul li.pinterest a{
+    background:#CB2028;   
+}
+
+ol, ul {
+  padding-left: initial;
+}
+
+/* ================================================================== */
+
+/* shopping content */
+
+ /* Dropdown Button */
+ .dropbtn {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  font-size: 12px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #f1f1f1;
+  color: red;  
+} 
+
+/* ================================================================== */
+
+/* The grid: Three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 10%;
+    height: 30px;
+    padding: 50px;
+    text-align: center;
+    font-size: 80%;
+    cursor: pointer;
+    color: black;
+}
+
+.containerTab {
+    padding: 20px;
+    color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Closable button inside the image */
+.closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/* ==================================================================== */
+
+/* Zig zag style layout section */
+* {
+    box-sizing: border-box;
+  }
+  
+  .container {
+    padding: 64px;
+  }
+  
+  /* Clear floats */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both
+  }
+  
+  /* 2/3 column */
+  .column-66 {
+    float: left;
+    width: 66.66666%;
+    padding: 20px;
+  }
+  
+  /* 1/3 column */
+  .column-33 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+  }
+  
+  /* Add responsiveness - make the columns appear on top of each other instead of next to each other on small screens */
+  @media screen and (max-width: 1000px) {
+    .column-66,
+    .column-33 {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  /* ====================================================================== */
+
+  /* video text */
+
+  .filterText {
+    color: yellow;
+    position: absolute;
+    text-align: center;
+    font-size: 100%;
+    bottom: 0;
+    width: 100%;
+    height: 55%;
+    z-index: 100;
+  }
+
+  /* ====================================================================== */
+
+  /* Picture hover */
+
+  /* .container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  } */
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: red;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .icon {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .fa-user:hover {
+    color: #eee;
+  }
+
+  /* ===================================================== */
+  
+  /* .single-work styling */
+  

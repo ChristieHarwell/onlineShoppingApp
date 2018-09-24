@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Cholvie Auction</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300i,400,400i,500,600,700,800,900" rel="stylesheet">
+
+  <!-- Font Awesome CDN for icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+  <!-- Bootstrap -->
+  <!-- <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" media="screen" /> -->
+  <!-- <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen"> -->
+  
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+  <!-- Google translator API link -->
+  <!-- <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+
+
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+    <div class="loader"></div>
+
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+            <h2>Tada!</h2>
+            <p>Some text in my newly loaded page..</p>
+          </div>
+    
+    <!-- Navbar START -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="#">Cholvie Auction</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Electronics <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Televisions</a></li>
+                            <li><a href="#">Computers</a></li>
+                            <li><a href="#">Audio</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Furniture <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Bedroom</a></li>
+                            <li><a href="#">Den</a></li>
+                            <li><a href="#">Dining</a></li>
+                            <li><a href="#">Formal</a></li>
+                            <li><a href="#">Office</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Vehicles <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Cars</a></li>
+                            <li><a href="#">SUV</a></li>
+                            <li><a href="#">Trucks</a></li>
+                            <li><a href="#">Vans</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- page content "wrapped" in one Google div for translation options -->
+    <div id="google_translate_element"></div>
+
+    </nav>
+    <!-- Navbar END -->
+    
+    <!-- =================================================================== -->
+
+    <!-- social media sidebar START -->
+    <div class="social-body">
+        <ul>				
+            <li class="linkedin"><a href="https://www.linkedin.com/in/christie-harwell-898517169/"><i class="fab fa-linkedin"></i></a></li>
+            <li class="instagram"><a href="https://github.com/ChristieHarwell"><i class="fab fa-github-square"></i></a></li>
+            <li class="facebook"><a href="https://www.facebook.com/Christie-Harwell-595295864204089/"><i class="fab fa-facebook-square"></i></a></li>
+        </ul>                                       
+    </div>
+    <!-- Social media sidebar END -->
+
+    <!-- =================================================================== -->
+
+    <!-- Container START -->
+    <div class="container">
+
+        <!-- Carousel div START -->
+        <div class="Carousel">        
+            <h2>New Auction Items</h2>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+
+                    <div class="item active">
+                        <img src="../img/Jeep1.jpg" alt="Los Angeles" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>Vehicles</h3>
+                            <p>2018 Jeep Wrangler</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="../img/couch1.jpg" alt="Chicago" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>Furniture</h3>
+                            <p>Sleek Couch</p>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <img src="../img/tv1.jpg" alt="New York" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>Electronics</h3>
+                            <p>Samsung Electronics</p>
+                        </div>
+                    </div>
+
+                    <div class="item active">
+                        <img src="../img/clothes1.jpg" alt="Los Angeles" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>Clothing</h3>
+                            <p>Latest Fashions</p>
+                        </div>
+                    </div>
+            
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <!-- Carousel div END -->
+
+        <!-- =================================================================== -->
+        
+        <!-- The grid: three columns START-->
+        <div class="row">
+            <div class="column" onclick="openTab('b1');" style="background:#909DAB;">Box 1</div>
+            <div class="column" onclick="openTab('b2');" style="background:#B3B5BF;">Box 2</div>
+            <div class="column" onclick="openTab('b3');" style="background:#4A4F5B;">Box 3</div>
+            <div class="column" onclick="openTab('b4');" style="background:rgb(118, 121, 128);">Box 4</div>
+        </div>
+        
+        <!-- The expanding grid (hidden by default) -->
+        <div id="b1" class="containerTab" style="display:none;background:#909DAB">
+            <!-- If you want the ability to close the container, add a close button -->
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+            <h2>Box 1</h2>
+            <p><a href="../public/tester.html">link to tester page</a></p>
+        </div>
+        
+        <div id="b2" class="containerTab" style="display:none;background:#B3B5BF">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+            <h2>Box 2</h2>
+            <p><a href="../public/tester.html">link to tester page</a></p>
+        </div>
+        
+        <div id="b3" class="containerTab" style="display:none;background:#4A4F5B">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+            <h2>Box 3</h2>
+            <p><a href="../public/tester.html">link to tester page</a></p>
+        </div>
+
+        <div id="b4" class="containerTab" style="display:none;background:rgb(118, 121, 128)">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+                <h2>Box 4</h2>
+                <p><a href="../public/tester.html">link to tester page</a></p>
+            </div>
+        <!-- The grid: three columns END -->
+
+        <!-- =================================================================== -->
+
+        <!-- Zig zag style layout section START-->
+        <div class="container">
+            <div class="row">
+                <div class="column-66">
+                ...
+                </div>
+                <div class="column-33">
+                ...
+                </div>
+            </div>
+        </div>
+              
+        <div class="container">
+            <div class="row">
+                <div class="column-33">
+                ...
+                </div>
+                <div class="column-66">
+                ...
+                </div>
+            </div>
+        </div>
+        <!-- Zig zag style layout section END-->
+
+        <!-- =================================================================== -->
+            
+
+    </div>
+    </div>
+
+    <!-- <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+
+    <!-- Video Loop javascript link -->
+    <script src="../js/videoLoopJS.js" type="text/javascript"></script>
+
+    <!-- javascript link -->
+    <script src="../js/main.js" type="text/javascript"></script>
+
+    <!-- google javascript link -->
+    <script src="../js/google.js" type="text/javascript"></script>
+
+    <script src="../js/loader.js"></script>
+
+    
+</body>
+</html>
+
+
+</body>
+</html>
