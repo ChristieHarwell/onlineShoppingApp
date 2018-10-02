@@ -6,7 +6,8 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .homepage-hero-moduleexample {background-clip: url(../img/womens/clothing.jpg);}
+    .womens-video {background-clip: url(../img/womens/clothing.jpg);}
+    body {background-color: red;}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
