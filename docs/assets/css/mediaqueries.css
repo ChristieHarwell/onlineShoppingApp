@@ -6,8 +6,12 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .womens-video {background-clip: url(../img/womens/clothing.jpg);}
-    body {background-color: red;}
+    .womens {
+        background-clip: url(../img/womens/clothing.jpg);
+        color: black;
+    }
+    
+    body {background-color: white;}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

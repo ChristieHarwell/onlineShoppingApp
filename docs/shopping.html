@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <title>Cholvie</title>
+</head>
+
+<body>
+
+    <div ng-app="myApp" ng-controller="productsCtrl">
+
+            <table border="1" width="100%">
+                <tr>
+                <th ng-click="orderByMe('designer')">Designer</th>
+                <th ng-click="orderByMe('item')">Items</th>
+                <th ng-click="orderByMe('price')">Price</th>
+                </tr>
+                <tr ng-repeat="x in products | orderBy:myOrderBy">
+                <td>{{x.designer}}</td>
+                <td>{{x.item}}</td>
+                <td>{{x.price}}</td>
+                </tr>
+            </table>
+            
+            </div>
+        
+        <script src="assets/js/controller.js"></script> 
+
+</body>
+</html>
